@@ -1,0 +1,25 @@
+{
+  "name": "user-management-mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaxonKnight28/user-management-mongoDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaxonKnight28/user-management-mongoDB/issues"
+  },
+  "homepage": "https://github.com/JaxonKnight28/user-management-mongoDB#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.2.0",
+    "path": "^0.12.7",
+    "pug": "^3.0.2"
+  }
+}
