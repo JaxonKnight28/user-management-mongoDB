@@ -2,7 +2,7 @@
 
 1. Clone or Download Repo
 
-2. In the ```user-management-mongoDB``` folder run ```npm init``` in the terminal
+2. In the ```user-management-mongoDB``` folder run ```npm init -y``` for a quick setup in the terminal
 
 3. Run ```npm install``` to install the needed packages
 

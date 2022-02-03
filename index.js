@@ -109,7 +109,8 @@ app.post('/delete', (req, res) => {
 })
 
 //show users
-app.get('/users', (req, res) => {
+app.get('/users:direction', (req, res) => {
+    //console.log(req.params.direction);
     let returnMsg = '<h1>Users:</h1>'
     user.find({}, (err, users) => {
         //console.log(users);
@@ -124,7 +125,7 @@ app.get('/users', (req, res) => {
         })
         returnMsg += '<a href="/">Back</a>'
         res.send(returnMsg)
-    })
+    }).sort({ 'firstName': req.params.direction })
 
 
 })
