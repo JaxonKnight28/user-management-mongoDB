@@ -95,7 +95,6 @@ app.post('/delete', (req, res) => {
     let lastToGo = req.body.lastName
     user.deleteOne({ firstName: firstToGo, lastName: lastToGo },
         (err, data) => {
-            console.log(data);
             if (err) return console.log(`Oops! ${err}`);
             let returnMsg = `
             <h1>User Successfully Deleted</h1>
@@ -135,7 +134,6 @@ app.post('/search', (req, res) => {
     let query = req.body.query;
     user.find({ $or: [{ firstName: query }, { lastName: query }] }, (err, users) => { //{ firstName: query }
         let returnMsg = '<h1>Results:</h1>'
-        console.log(users);
         if (users == false) {
             returnMsg += 'No Results <br><br>'
         }
