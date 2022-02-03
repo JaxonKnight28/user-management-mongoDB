@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management with MongoDB</title>
+</head>
+
+<body>
+    <h1>User management with Mongo DB</h1>
+    <h4>Create user:</h4>
+    <form action="/create" method="post">
+        <input name="firstName" placeholder="First Name" />
+        <input name="lastName" placeholder="Last Name" />
+        <input name="email" placeholder="Email" />
+        <input name="age" placeholder="Age" />
+        <input type="submit">
+    </form>
+    <h4>Edit user:</h4>
+    <form action="/edit" method="post">
+        <div style="margin-bottom: 10px;">
+            <p>First name of user to change:</p>
+            <input name="firstName" placeholder="First Name" />
+        </div>
+        <p>Options to change:</p>
+        <input name="lastName" placeholder="Last Name" />
+        <input name="email" placeholder="Email" />
+        <input name="age" placeholder="Age" />
+        <input type="submit">
+    </form>
+    <h4>Delete user:</h4>
+    <form action="/delete" method="post">
+        <input name="firstName" placeholder="First Name" />
+        <input name="lastName" placeholder="Last Name" />
+        <input type="submit">
+    </form>
+
+    <h4>View Users:</h4>
+    <a href="/users">List Users</a>
+    <br>
+    <a href="/search">Search Users</a>
+</body>
+
+</html>
