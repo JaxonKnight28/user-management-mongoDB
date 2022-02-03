@@ -8,4 +8,6 @@
 
 4. Run ```node index.js``` in the terminal to start
 
+5. Open ```http://localhost:3000/``` in a browser
+
 My database is hosted on my machine ```mongodb://localhost/userManagement``` and the users are stored under the collection ```users```
